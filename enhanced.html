@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, main, footer {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media elements, and a complete HTML5 form with validation.</p>
+</header>
+
+<main>
+    <!-- Lists -->
+    <section>
+        <h2>Top Web Development Skills</h2>
+        <ol>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript Fundamentals</li>
+            <li>Responsive Design</li>
+        </ol>
+        <h3>Tools You Might Use</h3>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Git & GitHub</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+        <h2>Sample Course Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML & CSS Basics</td>
+                    <td>4 weeks</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Essentials</td>
+                    <td>6 weeks</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Full Stack Development</td>
+                    <td>12 weeks</td>
+                    <td>Advanced</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media -->
+    <section>
+        <h2>Media Showcase</h2>
+        <img src="https://via.placeholder.com/600x300" alt="Sample Placeholder Image">
+        <video controls width="600">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" pattern="^\+2547\d{8}$" required>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select Your Country --</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required minlength="8">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required minlength="8">
+
+                <label for="member-id">Member ID (Read-only):</label>
+                <input type="text" id="member-id" name="member-id" value="MEM12345" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Newsletter Subscription:</label>
+                <input type="radio" id="subscribe-yes" name="newsletter" value="yes" required>
+                <label for="subscribe-yes">Yes</label>
+                <input type="radio" id="subscribe-no" name="newsletter" value="no">
+                <label for="subscribe-no">No</label>
+
+                <label for="interests">Select Your Interests:</label>
+                <input type="checkbox" id="html" name="interests" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="interests" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="interests" value="JavaScript">
+                <label for="js">JavaScript</label>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Write something about yourself..." minlength="10" maxlength="200"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment</p>
+</footer>
+
+</body>
+</html>
